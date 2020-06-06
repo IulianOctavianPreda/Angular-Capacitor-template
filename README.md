@@ -29,8 +29,6 @@ Most script will have the ending
 
 ### Scripts:
 
-- `cd` - `cd:web`, `cd:android`, `cd:electron`, `cd:ios` - changes the path from the root to the desired platform folder
-
 - `add` - `add:android`, `add:electron`, `add:ios` - adds the desired platform to the project - it will create a folder with the same name in the root folder - It must be used only once as initialization, and the current template already initialized them and updated the packages to run out of the box, feel free to delete any of the `android`, `electron` or `ios` folders
 
 - `open` - `open:android`, `open:electron`, `open:ios` - opens the project for the desired platform in the software of choice, for android it opens it in Android Studio(it must be installed), for IOS it opens XCode(can be used only on Macs), electron will open the app(think of it as ng serve for an Angular app)

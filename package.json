@@ -9,11 +9,6 @@
 
     "init:capacitor": "npx cap init",
 
-    "cd:web": "cd ../",
-    "cd:android": "cd ./android",
-    "cd:electron": "cd ./electron",
-    "cd:ios": "cd ./ios",
-
     "add:android": "npx cap add android",
     "add:electron": "npx cap add electron",
     "add:ios": "npx cap add ios",
@@ -36,8 +31,8 @@
     "start:electron": "npm run build:electron && npm run open:electron ",
     "start:ios": "npm run build:ios && npm run open:ios ",
 
-    "restore":"npm install && npm run cd:electron && npm install",
-    "package:electron": "npm run build:electron && npm run cd:electron && npm run electron:package && npm run cd:web"
+    "restore":"npm install && cd ./electron && npm install",
+    "package:electron": "npm run build:electron && cd ./electron && npm run electron:package && cd ../"
   },
   "private": true,
   "dependencies": {
